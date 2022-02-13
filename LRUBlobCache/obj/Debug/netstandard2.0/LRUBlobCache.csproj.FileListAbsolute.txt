@@ -1,0 +1,9 @@
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\bin\Debug\netstandard2.0\LRUBlobCache.deps.json
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\bin\Debug\netstandard2.0\LRUBlobCache.dll
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\bin\Debug\netstandard2.0\LRUBlobCache.pdb
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\obj\Debug\netstandard2.0\LRUBlobCache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\obj\Debug\netstandard2.0\LRUBlobCache.AssemblyInfoInputs.cache
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\obj\Debug\netstandard2.0\LRUBlobCache.AssemblyInfo.cs
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\obj\Debug\netstandard2.0\LRUBlobCache.csproj.CoreCompileInputs.cache
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\obj\Debug\netstandard2.0\LRUBlobCache.dll
+C:\Users\sodragon\source\repos\LRUBlobCache\LRUBlobCache\obj\Debug\netstandard2.0\LRUBlobCache.pdb

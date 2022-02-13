@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "h10nxKYt+bwFI4TledViy6u/yL1Vw2y/n1hZC7FYdp6y6lCI6f9ItHZX/9NoqDw/0j2GfUhhMNFiRj/2vyv+wg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sodragon\\source\\repos\\LRUBlobCache\\LRUBlobCache\\LRUBlobCache.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sodragon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\sodragon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

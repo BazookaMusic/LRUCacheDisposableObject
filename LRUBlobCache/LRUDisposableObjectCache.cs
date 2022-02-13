@@ -42,6 +42,8 @@
 
         private bool isDisposed;
 
+        private bool scavengingHappening;
+
         /// <summary>
         /// Gets the total size of the LRU cache.
         /// </summary>
@@ -394,15 +396,36 @@
 
         private void Scavenge(long requiredSize, bool timerCleanup = false, bool lockAlreadyTaken = false)
         {
+            // don't allow scavenging to happen on more than one thread
+            if (this.scavengingHappening)
+            {
+                return;
+            }
+
             if (!lockAlreadyTaken)
             {
                 this.cacheLock.EnterUpgradeableReadLock();
             }
             try
             {
+                if (this.scavengingHappening)
+                {
+                    return;
+                }
+
                 DateTime scavengeStart = DateTime.Now;
 
                 if (!timerCleanup && !this.ScavengeRequired(requiredSize, !timerCleanup))
+                {
+                    return;
+                }
+
+                if (!this.cacheLock.IsWriteLockHeld)
+                {
+                    this.cacheLock.EnterWriteLock();
+                }
+
+                if (this.scavengingHappening)
                 {
                     return;
                 }
