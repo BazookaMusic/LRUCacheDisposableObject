@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>BMCollectionsBenchmarks.LRUCacheBenchmark-20220213-015936</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19044.1526 (21H2)
+AMD Ryzen 7 5800H with Radeon Graphics, 1 CPU, 16 logical and 8 physical cores
+.NET SDK=6.0.101
+  [Host]     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+  Job-MQIMSE : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+</code></pre>
+<pre><code>InvocationCount=1  UnrollFactor=1  
+</code></pre>
+
+<table>
+<thead><tr><th>         Method</th><th>N</th><th>    Mean</th><th>   Error</th><th>  StdDev</th>
+</tr>
+</thead><tbody><tr><td>Add</td><td>1</td><td>2.869 &mu;s</td><td>0.0576 &mu;s</td><td>0.0788 &mu;s</td>
+</tr><tr><td>AddDoubleThanCapacity</td><td>1</td><td>3.163 &mu;s</td><td>0.0630 &mu;s</td><td>0.0619 &mu;s</td>
+</tr><tr><td>Remove</td><td>1</td><td>1.312 &mu;s</td><td>0.0472 &mu;s</td><td>0.1363 &mu;s</td>
+</tr><tr><td>TryGet</td><td>1</td><td>1.120 &mu;s</td><td>0.0298 &mu;s</td><td>0.0842 &mu;s</td>
+</tr><tr><td>Add</td><td>100</td><td>28.400 &mu;s</td><td>0.8147 &mu;s</td><td>2.3636 &mu;s</td>
+</tr><tr><td>AddDoubleThanCapacity</td><td>100</td><td>58.547 &mu;s</td><td>1.4389 &mu;s</td><td>4.1284 &mu;s</td>
+</tr><tr><td>Remove</td><td>100</td><td>7.931 &mu;s</td><td>0.1575 &mu;s</td><td>0.1316 &mu;s</td>
+</tr><tr><td>TryGet</td><td>100</td><td>6.993 &mu;s</td><td>0.1369 &mu;s</td><td>0.1630 &mu;s</td>
+</tr><tr><td>Add</td><td>1000</td><td>254.105 &mu;s</td><td>4.8956 &mu;s</td><td>5.8279 &mu;s</td>
+</tr><tr><td>AddDoubleThanCapacity</td><td>1000</td><td>536.823 &mu;s</td><td>10.4677 &mu;s</td><td>8.7410 &mu;s</td>
+</tr><tr><td>Remove</td><td>1000</td><td>62.786 &mu;s</td><td>0.7295 &mu;s</td><td>0.6467 &mu;s</td>
+</tr><tr><td>TryGet</td><td>1000</td><td>59.227 &mu;s</td><td>0.6054 &mu;s</td><td>0.5663 &mu;s</td>
+</tr><tr><td>Add</td><td>10000</td><td>1,809.122 &mu;s</td><td>31.7093 &mu;s</td><td>40.1021 &mu;s</td>
+</tr><tr><td>AddDoubleThanCapacity</td><td>10000</td><td>3,800.063 &mu;s</td><td>74.5922 &mu;s</td><td>128.6680 &mu;s</td>
+</tr><tr><td>Remove</td><td>10000</td><td>639.315 &mu;s</td><td>5.3175 &mu;s</td><td>4.4403 &mu;s</td>
+</tr><tr><td>TryGet</td><td>10000</td><td>375.005 &mu;s</td><td>7.4677 &mu;s</td><td>14.0261 &mu;s</td>
+</tr><tr><td>Add</td><td>100000</td><td>21,366.333 &mu;s</td><td>425.0612 &mu;s</td><td>877.8250 &mu;s</td>
+</tr><tr><td>AddDoubleThanCapacity</td><td>100000</td><td>47,065.887 &mu;s</td><td>933.4639 &mu;s</td><td>873.1627 &mu;s</td>
+</tr><tr><td>Remove</td><td>100000</td><td>3,660.830 &mu;s</td><td>73.2031 &mu;s</td><td>109.5670 &mu;s</td>
+</tr><tr><td>TryGet</td><td>100000</td><td>3,819.075 &mu;s</td><td>73.9980 &mu;s</td><td>72.6759 &mu;s</td>
+</tr><tr><td>Add</td><td>1000000</td><td>227,453.107 &mu;s</td><td>4,158.3216 &mu;s</td><td>3,686.2437 &mu;s</td>
+</tr><tr><td>AddDoubleThanCapacity</td><td>1000000</td><td>518,131.480 &mu;s</td><td>10,185.1291 &mu;s</td><td>16,734.4592 &mu;s</td>
+</tr><tr><td>Remove</td><td>1000000</td><td>36,771.973 &mu;s</td><td>515.9315 &mu;s</td><td>482.6026 &mu;s</td>
+</tr><tr><td>TryGet</td><td>1000000</td><td>36,360.564 &mu;s</td><td>482.1661 &mu;s</td><td>427.4277 &mu;s</td>
+</tr></tbody></table>
+</body>
+</html>
